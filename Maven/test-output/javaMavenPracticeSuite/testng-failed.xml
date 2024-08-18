@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [javaMavenPracticeSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="APIKey" value="123456789"/>
+  <parameter name="URL" value="https://rahulshettyacademy.com/AutomationPractice/"/>
+  <listeners>
+    <listener class-name="testNGDemo.Listeners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="TestNG-&gt;Car-&gt;Home-&gt;Personal(failed)">
+    <classes>
+      <class name="testNGDemo.HomeLoan">
+        <methods>
+          <include name="WebLoginHomeLoan" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNGDemo.HomeLoan -->
+    </classes>
+  </test> <!-- TestNG->Car->Home->Personal(failed) -->
+</suite> <!-- Failed suite [javaMavenPracticeSuite] -->

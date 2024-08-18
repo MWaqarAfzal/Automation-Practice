@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNGPracticeSuite">
+    <test name="TestNG->Car->Home->Loan">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="CarLoan"/>
+            <class name="HomeLoan"/>
+            <class name="PersonalLoan"/>
+        </classes>
+    </test>
+</suite>

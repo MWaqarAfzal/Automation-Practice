@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="javaMavenPracticeSuite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="testNGDemo.Listeners"/>
+	</listeners>
+	<parameter name="URL" value="https://rahulshettyacademy.com/AutomationPractice/"/>
+	<parameter name="APIKey" value="123456789"/>
+	<test name="TestNG->Car->Home->Personal">
+		<classes>
+			 <class name="testNGDemo.HomeLoan">
+                <methods>
+                    <include name="WebLoginHomeLoan"/>
+                </methods>
+            </class>
+            <class name="testNGDemo.CarLoan">
+                <methods>
+                    <exclude name="Mobile.*"/>
+                </methods>
+            </class>
+		</classes>		
+	</test>
+	<test name = "TestNG->PersonalLoan">
+		<parameter name="PersonalLoanURL" value="www.personalloan.com"/>
+		<parameter name="PersonalLoanKey" value="$1000"></parameter>
+        <classes>
+            <class name="testNGDemo.PersonalLoan">
+                <methods>
+                    <exclude name="MobileLoginPersonalLoan"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+

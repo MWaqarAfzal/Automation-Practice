@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-17T18:20:18 PKT" name="Default suite" finished-at="2024-07-17T18:20:28 PKT" duration-ms="9625">
+    <groups>
+    </groups>
+    <test started-at="2024-07-17T18:20:18 PKT" name="Default test" finished-at="2024-07-17T18:20:28 PKT" duration-ms="9625">
+      <class name="rahulshetty.ExtentReportProject.ExtentDemo">
+        <test-method is-config="true" signature="extentReportConfig()[pri:0, instance:rahulshetty.ExtentReportProject.ExtentDemo@7d8995e]" started-at="2024-07-17T18:20:18 PKT" name="extentReportConfig" finished-at="2024-07-17T18:20:19 PKT" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReportConfig -->
+        <test-method signature="browserSetup()[pri:0, instance:rahulshetty.ExtentReportProject.ExtentDemo@7d8995e]" started-at="2024-07-17T18:20:19 PKT" name="browserSetup" finished-at="2024-07-17T18:20:28 PKT" duration-ms="9206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+      </class> <!-- rahulshetty.ExtentReportProject.ExtentDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
